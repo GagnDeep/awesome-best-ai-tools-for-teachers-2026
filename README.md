@@ -1,6 +1,6 @@
 ---
 title: "best-ai-tools-for-teachers-2026"
-description: "Best open source AI tools for teachers in 2026: verified GitHub repos for tutoring, transcription, OCR, translation, and self-hosted classroom AI."
+description: "Best AI tools for teachers 2026: a verified awesome list of open source GitHub repos for lesson planning, tutoring, OCR, transcription, translation, and more."
 icon: 📋
 category: education
 ---
@@ -11,7 +11,7 @@ category: education
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Topics](https://img.shields.io/github/stars/GagnDeep/awesome-best-ai-tools-for-teachers-2026?style=social)
 
-> This curated list of the best AI tools for teachers in 2026 focuses only on open source projects that exist as public GitHub repositories. Every entry below has a GitHub URL, visible repository metadata, and a practical classroom use case such as tutoring, transcription, OCR, translation, or self-hosted course assistants.
+> This curated list of the best AI tools for teachers 2026 focuses on verifiable, open source software that exists as public GitHub repositories. Every project below has a `github.com` URL, can be inspected or self-hosted, and maps to real classroom work such as lesson planning, tutoring, document analysis, transcription, translation, accessibility, and visual content creation.
 
 ## Table of Contents
 - [TL;DR](#tldr)
@@ -22,406 +22,396 @@ category: education
 - [License](#license)
 
 ## TL;DR
-- `HKUDS/DeepTutor` is the strongest teacher-facing AI tutor in this list if you want a document-grounded learning assistant with practice generation.
-- `ggml-org/whisper.cpp` and `SYSTRAN/faster-whisper` are the most practical open source speech-to-text picks for lecture capture, accessibility, and note generation.
-- `PaddlePaddle/PaddleOCR` and `ocrmypdf/OCRmyPDF` are the best open source OCR choices for turning worksheets, scans, and PDFs into searchable classroom material.
-- `LibreTranslate/LibreTranslate`, `coqui-ai/TTS`, and `rhasspy/piper` are strong building blocks for multilingual and accessibility-focused teaching workflows.
-- `langgenius/dify`, `open-webui/open-webui`, and `Mintplex-Labs/anything-llm` are the best self-hosted hubs for building school-safe AI assistants around course documents.
+- **Best self-hosted classroom assistant:** [Open WebUI](https://github.com/open-webui/open-webui), [Dify](https://github.com/langgenius/dify), and [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm).
+- **Best for local speech and accessibility workflows:** [Whisper](https://github.com/openai/whisper), [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [Vosk](https://github.com/alphacep/vosk-api), and [Piper](https://github.com/rhasspy/piper).
+- **Best for OCR and worksheet digitization:** [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), [Tesseract](https://github.com/tesseract-ocr/tesseract), [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), and [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF).
+- **Best for notebook-based teaching and demos:** [Jupyter AI](https://github.com/jupyterlab/jupyter-ai), [Ollama](https://github.com/ollama/ollama), and [Haystack](https://github.com/deepset-ai/haystack).
+- **Best for classroom visuals and media:** [ComfyUI](https://github.com/Comfy-Org/ComfyUI), [InvokeAI](https://github.com/invoke-ai/InvokeAI), and [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
 
 ## Why This List
-Most lists about AI for educators mix proprietary SaaS, affiliate-driven recommendations, and tools that are impossible to audit or self-host. This list is intentionally narrower: it tracks only GitHub-native, open source repositories that teachers, schools, and instructional designers can inspect, fork, self-host, and adapt. That matters for privacy, budget control, accessibility, and long-term curriculum ownership.
+Open source matters when evaluating the best AI tools for teachers 2026 because schools care about privacy, reproducibility, budget control, and long-term access. A GitHub-first list also makes it easier to audit licenses, check maintenance, and avoid getting locked into opaque SaaS pricing.
 
-Gap note: dedicated teacher-first AI quiz-generation and grading repositories are still thin on GitHub. I found fewer than 5 actively maintained, clearly documented repos that met the same quality bar as the projects below, so this list focuses on stronger adjacent workflows instead of padding weak matches.
+This list is intentionally broader than "teacher-only apps." During verification, dedicated teacher-specific grading and quiz-generation repos did not produce five strong, actively maintained candidates, so those are documented as a gap rather than padded with weak projects.
 
 ## Open Source Tools
 
-### AI Tutoring and Study Companions
+### Classroom Assistants, Tutoring, and RAG
 
-#### [DeepTutor](https://github.com/HKUDS/DeepTutor)
-> **Description:** DeepTutor positions itself as an AI-powered personalized learning assistant rather than a generic chatbot. The README emphasizes four pillars: massive document knowledge Q&A, interactive learning visualization, knowledge reinforcement through practice generation, and deep research support. In practice, that makes it useful for teachers who want to upload textbooks, reference exams, or unit notes and turn them into explainers and targeted exercises. Its GitHub metadata shows an AGPL-3.0 license, about 10.9k stars, Python as the primary language, and a last commit date of Mar 30, 2026.
+#### [Open WebUI](https://github.com/open-webui/open-webui)
+> **Description:** Open WebUI is an extensible self-hosted AI platform designed to run fully offline while supporting Ollama and OpenAI-compatible APIs. For teachers, that makes it a strong front end for classroom chatbots, district-safe local assistants, document Q&A, and private curriculum copilots. Its README highlights built-in RAG, plugins, model routing, and multilingual support, which are all practical in school settings where lesson packs, policies, and reference PDFs need to stay searchable. GitHub signals strong momentum: about 129k stars, Python as the primary language, the custom Open WebUI License, and a latest verified commit on March 27, 2026.
 
-- **GitHub:** [github.com/HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)
-- **Stars:** 10.9k ⭐
+- **GitHub:** [github.com/open-webui/open-webui](https://github.com/open-webui/open-webui)
+- **Stars:** 129k ⭐
 - **Language:** Python
-- **License:** AGPL-3.0
-- **Last Commit:** Mar 30, 2026
-- **Category:** tutoring, rag, personalized-learning
-- **Best for:** Building a self-hosted AI tutor around your own course documents
+- **License:** Open WebUI License
+- **Last Commit:** 2026-03-27
+- **Category:** chat-ui, rag, self-hosted
+- **Best for:** Private school or classroom AI portals
 
 ---
 
-#### [ChatTutor](https://github.com/HugeCatLab/ChatTutor)
-> **Description:** ChatTutor is one of the few repos in this space that explicitly frames itself as an AI teacher. Its README focuses on visual and interactive tutoring, especially for STEM instruction, where plain text explanations are often not enough. The project adds a whiteboard-style interface so an assistant can illustrate concepts instead of only answering in chat. That makes it interesting for teachers who want a more classroom-like tutoring interaction for math, science, and diagram-heavy lessons. GitHub shows roughly 982 stars, Vue as the main language, AGPL-3.0 licensing, and activity on Jan 9, 2026.
+#### [Dify](https://github.com/langgenius/dify)
+> **Description:** Dify presents itself as a production-ready platform for developing LLM applications with visual workflows, prompt tooling, agent support, APIs, observability, and an end-to-end RAG pipeline. That combination is useful for teachers and instructional designers who want to build resource bots, policy helpers, syllabus copilots, or student-facing assistants without starting from a blank codebase. Its README also calls out support for PDF and PPT ingestion, which fits real school document workflows. On GitHub it is one of the largest projects in this space, with about 135k stars, TypeScript as the primary language, the Dify Open Source License, and a latest verified commit on March 30, 2026.
 
-- **GitHub:** [github.com/HugeCatLab/ChatTutor](https://github.com/HugeCatLab/ChatTutor)
-- **Stars:** 982 ⭐
-- **Language:** Vue
-- **License:** AGPL-3.0
-- **Last Commit:** Jan 9, 2026
-- **Category:** tutoring, visual-learning, stem
-- **Best for:** Visual AI tutoring for STEM-heavy explanations
-
----
-
-#### [Anki MCP Server](https://github.com/ankimcp/anki-mcp-server)
-> **Description:** This project connects AI assistants to Anki through the Model Context Protocol. The README is concrete about what that means: agents can list decks, create or edit notes, manage media, and work with flashcards programmatically. For teachers, that is useful when turning lesson objectives, reading packets, or vocabulary lists into spaced-repetition study material without locking students into a proprietary workflow. The repo is openly licensed under AGPL-3.0-or-later, uses TypeScript, has about 200 stars, and showed activity on Mar 28, 2026.
-
-- **GitHub:** [github.com/ankimcp/anki-mcp-server](https://github.com/ankimcp/anki-mcp-server)
-- **Stars:** 200 ⭐
+- **GitHub:** [github.com/langgenius/dify](https://github.com/langgenius/dify)
+- **Stars:** 135k ⭐
 - **Language:** TypeScript
-- **License:** AGPL-3.0-or-later
-- **Last Commit:** Mar 28, 2026
-- **Category:** flashcards, mcp, spaced-repetition
-- **Best for:** Automating Anki deck creation from lesson materials
+- **License:** Dify Open Source License
+- **Last Commit:** 2026-03-30
+- **Category:** workflows, agents, rag
+- **Best for:** Building teacher copilots and school knowledge apps
 
 ---
 
-#### [Study Buddy](https://github.com/michael-borck/study-buddy)
-> **Description:** Study Buddy is a local-first desktop tutor that runs on a teacher or student machine and defaults to private, local inference. The README highlights personalized tutorials, chat-based follow-up questions, offline use after setup, and educator deployment options for school environments. It is a good fit for districts that want an approachable desktop interface without defaulting to cloud accounts or student data export. GitHub lists it as MIT-licensed, primarily TypeScript, with about 10 stars, and the topic page shows activity on Mar 1, 2026.
+#### [Flowise](https://github.com/FlowiseAI/Flowise)
+> **Description:** Flowise is a visual builder for AI agents and retrieval pipelines, aimed at users who want to assemble LLM apps with a node-based interface instead of writing everything by hand. That makes it well suited to teachers experimenting with tutoring flows, FAQ bots for courses, rubric helpers, or library-search assistants connected to local materials. The README emphasizes Docker deployment, self-hosting options, and broad support for infrastructure and provider integrations. GitHub metadata shows a mature project with about 51.1k stars, TypeScript as the primary language, Apache-2.0 licensing, and a latest verified commit on March 27, 2026.
 
-- **GitHub:** [github.com/michael-borck/study-buddy](https://github.com/michael-borck/study-buddy)
-- **Stars:** 10 ⭐
+- **GitHub:** [github.com/FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)
+- **Stars:** 51.1k ⭐
 - **Language:** TypeScript
-- **License:** MIT
-- **Last Commit:** Mar 1, 2026
-- **Category:** offline-ai, desktop-app, tutoring
-- **Best for:** Private local tutoring on teacher or student devices
+- **License:** Apache-2.0
+- **Last Commit:** 2026-03-27
+- **Category:** low-code, agents, chatbots
+- **Best for:** Visual AI workflow building for educators
 
 ---
 
-#### [AI-Tutor](https://github.com/hari7261/AI-Tutor)
-> **Description:** AI-Tutor is a small but relevant repo for educators who want a simple local tutoring assistant. The README emphasizes step-by-step explanations, custom MCQ generation, and fully local operation through Ollama, which keeps data off third-party services. It does not have the ecosystem size of DeepTutor or Dify, but it is easy to understand and aligned with a privacy-first classroom workflow. GitHub shows an MIT license, Python as the primary language, about 12 stars, and recent activity on Jul 4, 2025.
+#### [Langflow](https://github.com/langflow-ai/langflow)
+> **Description:** Langflow is a visual environment for building and deploying AI agents and workflows. Its README frames it as a bridge from experimentation to deployment, which is a useful fit for computer science teachers, instructional technologists, and academic labs that want to prototype tutor bots, document pipelines, or agent demos in a reproducible UI. Because it is completely open source and deployable across major clouds or local infrastructure, it works for both hobbyist and institutional setups. GitHub shows major adoption with about 143k stars, Python as the primary language, an MIT license, and the repository updated on January 3, 2026.
 
-- **GitHub:** [github.com/hari7261/AI-Tutor](https://github.com/hari7261/AI-Tutor)
-- **Stars:** 12 ⭐
+- **GitHub:** [github.com/langflow-ai/langflow](https://github.com/langflow-ai/langflow)
+- **Stars:** 143k ⭐
 - **Language:** Python
 - **License:** MIT
-- **Last Commit:** Jul 4, 2025
-- **Category:** offline-ai, ollama, quizzes
-- **Best for:** Lightweight local tutoring with quick quiz generation
+- **Last Commit:** 2026-01-03
+- **Category:** workflows, agents, visual-builder
+- **Best for:** Rapid prototyping of classroom AI flows
 
 ---
 
-### Speech, Transcription, and Accessibility
+#### [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)
+> **Description:** AnythingLLM is positioned as an all-in-one desktop and Docker AI app with built-in RAG, agents, an embeddable chat widget, vector database support, and no-code agent building. For teachers, the immediate value is simple document ingestion and citation-backed Q&A across PDFs, notes, handouts, and class repositories without needing to stitch together five separate tools. Its README also stresses privacy-first local operation and broad support for both open and closed models. GitHub shows strong adoption with about 53.3k stars, JavaScript as the primary language, an MIT license, and the repository updated on March 27, 2026.
 
-#### [whisper.cpp](https://github.com/ggml-org/whisper.cpp)
-> **Description:** whisper.cpp is one of the most practical open source speech-to-text tools for teachers because it ports Whisper to efficient local C/C++ inference. Its README and topic description make the value clear: fast local transcription without having to push recordings to a hosted API. That is useful for lecture capture, classroom discussion notes, student oral reflections, and accessibility workflows. GitHub topic metadata shows about 48.1k stars, C++ as the primary language, a last commit on Mar 29, 2026, and the project is widely used as a foundation for offline transcription tools.
-
-- **GitHub:** [github.com/ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp)
-- **Stars:** 48.1k ⭐
-- **Language:** C++
+- **GitHub:** [github.com/Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm)
+- **Stars:** 53.3k ⭐
+- **Language:** JavaScript
 - **License:** MIT
-- **Last Commit:** Mar 29, 2026
-- **Category:** speech-to-text, offline, accessibility
-- **Best for:** Local transcription of lectures and classroom audio
+- **Last Commit:** 2026-03-27
+- **Category:** rag, local-ai, workspace-chat
+- **Best for:** Faculty document Q&A with minimal setup
+
+---
+
+#### [Khoj](https://github.com/khoj-ai/khoj)
+> **Description:** Khoj describes itself as a self-hostable AI second brain that can answer questions from the web or your own documents, build custom agents, schedule automations, and work with both online and local LLMs. In a teaching context, that makes it useful for personal research support, curriculum search, lecture prep, or building a searchable faculty knowledge base. Its README also points to semantic search and automation features, which help beyond simple chat. GitHub metadata shows about 33.8k stars, Python as the primary language, AGPL-3.0 licensing, and a latest verified commit on March 26, 2026.
+
+- **GitHub:** [github.com/khoj-ai/khoj](https://github.com/khoj-ai/khoj)
+- **Stars:** 33.8k ⭐
+- **Language:** Python
+- **License:** AGPL-3.0
+- **Last Commit:** 2026-03-26
+- **Category:** research, knowledge-base, agents
+- **Best for:** Personal teaching knowledge management
+
+---
+
+#### [RAGFlow](https://github.com/infiniflow/ragflow)
+> **Description:** RAGFlow is an open-source retrieval-augmented generation engine that combines document understanding, retrieval, and agent capabilities into a context layer for LLMs. Teachers and school teams can use it to turn collections of policies, readings, lecture notes, or scanned archives into structured question-answering systems with stronger retrieval than a plain chat interface. Its README leans heavily into document parsing and advanced RAG behavior, which is especially relevant in education where source fidelity matters. GitHub shows about 76.3k stars, Python as the primary language, Apache-2.0 licensing, and a latest verified commit on March 27, 2026.
+
+- **GitHub:** [github.com/infiniflow/ragflow](https://github.com/infiniflow/ragflow)
+- **Stars:** 76.3k ⭐
+- **Language:** Python
+- **License:** Apache-2.0
+- **Last Commit:** 2026-03-27
+- **Category:** rag, document-understanding, search
+- **Best for:** Large school or library document collections
+
+---
+
+#### [Jupyter AI](https://github.com/jupyterlab/jupyter-ai)
+> **Description:** Jupyter AI is an open source JupyterLab extension that connects AI agents to notebooks and provides a native chat interface, notebook-aware tools, file access, and support for multiple providers and MCP servers. That makes it especially useful for STEM teachers, data science instructors, and universities that already teach in notebooks and want AI help inside the same environment. Its README emphasizes collaboration with agents and notebook cells as context, which is stronger than bolting chat onto a separate webpage. GitHub shows about 4.2k stars, Python as the primary language, a BSD-3-Clause license, and a latest verified commit on January 6, 2026.
+
+- **GitHub:** [github.com/jupyterlab/jupyter-ai](https://github.com/jupyterlab/jupyter-ai)
+- **Stars:** 4.2k ⭐
+- **Language:** Python
+- **License:** BSD-3-Clause
+- **Last Commit:** 2026-01-06
+- **Category:** notebooks, coding, agents
+- **Best for:** AI-assisted teaching in Jupyter-based courses
+
+---
+
+#### [Ollama](https://github.com/ollama/ollama)
+> **Description:** Ollama is the simplest widely adopted way to run local large language models on macOS, Windows, Linux, and Docker. For teachers, it is not a classroom app by itself, but it is a foundational building block for privacy-sensitive lesson planning, offline demos, student-safe experimentation, and local deployments of tools like Open WebUI or notebook assistants. The README centers on easy installation, model downloads, and a growing ecosystem of community integrations. GitHub signals exceptional momentum with about 167k stars, Go as the primary language, MIT licensing, and a latest verified commit on April 1, 2026.
+
+- **GitHub:** [github.com/ollama/ollama](https://github.com/ollama/ollama)
+- **Stars:** 167k ⭐
+- **Language:** Go
+- **License:** MIT
+- **Last Commit:** 2026-04-01
+- **Category:** local-llm, infrastructure, privacy
+- **Best for:** Running local models for school-safe deployments
+
+---
+
+#### [Haystack](https://github.com/deepset-ai/haystack)
+> **Description:** Haystack is an orchestration framework for production-ready LLM applications, with components for file conversion, vector databases, semantic search, question answering, and RAG pipelines. In education, it is a strong fit for advanced teams building searchable course repositories, campus assistants, or research tools over large document sets. Its README emphasizes modularity, explicit pipelines, and support for both local and hosted models, which matters when institutions need control over architecture. GitHub shows about 23.8k stars, MDX as the primary GitHub language, Apache-2.0 licensing, and the repository updated on January 9, 2026.
+
+- **GitHub:** [github.com/deepset-ai/haystack](https://github.com/deepset-ai/haystack)
+- **Stars:** 23.8k ⭐
+- **Language:** MDX
+- **License:** Apache-2.0
+- **Last Commit:** 2026-01-09
+- **Category:** rag, semantic-search, pipelines
+- **Best for:** Advanced institutional knowledge retrieval projects
+
+---
+
+### Speech, Transcription, Translation, and Accessibility
+
+#### [Whisper](https://github.com/openai/whisper)
+> **Description:** Whisper is OpenAI's open source speech recognition model for multilingual transcription, translation, and language identification. Teachers can use it for lecture transcripts, accessibility workflows, interview coding, oral history projects, and turning recorded lessons into searchable notes. The README describes it as a multitask sequence-to-sequence model trained on diverse audio, which is why it remains a default choice for educational transcription pipelines. On GitHub it remains one of the most important speech repos, with about 97k stars, Python as the primary language, an MIT license, and a latest verified commit on March 27, 2026.
+
+- **GitHub:** [github.com/openai/whisper](https://github.com/openai/whisper)
+- **Stars:** 97k ⭐
+- **Language:** Python
+- **License:** MIT
+- **Last Commit:** 2026-03-27
+- **Category:** speech-to-text, translation, accessibility
+- **Best for:** Lecture and meeting transcription
 
 ---
 
 #### [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
-> **Description:** faster-whisper is a performance-focused Whisper implementation built on CTranslate2. The project is especially useful when teachers or school IT teams need a Python-native transcription engine that is faster and easier to integrate into note-taking, summarization, or media-processing pipelines. Compared with consumer lecture-transcription products, it stays inspectable and self-hostable. GitHub topic metadata lists about 21.8k stars, Python as the primary language, MIT licensing, and a last update on Nov 19, 2025.
+> **Description:** faster-whisper reimplements Whisper on top of CTranslate2 for materially faster inference and lower memory use. In practice, that matters for teachers and schools running transcription on modest hardware, because it can turn recorded lectures, student presentations, or discussion audio into text more efficiently than the reference implementation. The README explicitly positions it as up to several times faster while preserving comparable accuracy, and it removes the need for a full system FFmpeg install through bundled decoding. GitHub shows about 19.5k stars, Python as the primary language, MIT licensing, and a latest verified commit on November 19, 2025.
 
 - **GitHub:** [github.com/SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper)
-- **Stars:** 21.8k ⭐
+- **Stars:** 19.5k ⭐
 - **Language:** Python
 - **License:** MIT
-- **Last Commit:** Nov 19, 2025
-- **Category:** speech-to-text, python, whisper
-- **Best for:** Fast transcription pipelines for recorded lessons and videos
+- **Last Commit:** 2025-11-19
+- **Category:** speech-to-text, efficiency, offline
+- **Best for:** Faster local transcription on school hardware
 
 ---
 
-#### [whisperX](https://github.com/m-bain/whisperX)
-> **Description:** whisperX extends Whisper-style transcription with word-level timestamps and diarization, which makes it particularly valuable in education. A normal transcript is helpful; a timestamped transcript that can separate speakers is much better for seminars, interviews, feedback sessions, and discussion-based classes. The README centers those strengths, and that makes whisperX a better fit than baseline transcription when teachers need searchable, reviewable classroom audio. GitHub topic metadata shows about 21k stars, Python as the primary language, BSD-2-Clause licensing, and recent activity on Mar 25, 2026.
+#### [whisper.cpp](https://github.com/ggml-org/whisper.cpp)
+> **Description:** whisper.cpp is a high-performance C and C++ port of OpenAI's Whisper model built for efficient local inference across desktops, mobile devices, embedded hardware, and even browser or Raspberry Pi environments. For teachers, it is especially useful when lecture transcription, caption generation, or voice projects need to run fully offline on constrained hardware instead of GPU-heavy servers. The README emphasizes zero-dependency builds, quantization support, CPU-first deployment, and broad platform support, which makes it one of the most practical speech tools in open source education workflows. GitHub shows about 48.2k stars, C++ as the primary language, MIT licensing, and a latest verified commit on March 29, 2026.
 
-- **GitHub:** [github.com/m-bain/whisperX](https://github.com/m-bain/whisperX)
-- **Stars:** 21k ⭐
-- **Language:** Python
-- **License:** BSD-2-Clause
-- **Last Commit:** Mar 25, 2026
-- **Category:** diarization, timestamps, speech-to-text
-- **Best for:** Timestamped and speaker-aware transcripts for class discussions
-
----
-
-#### [Handy](https://github.com/cjpais/Handy)
-> **Description:** Handy is an end-user speech-to-text desktop app rather than only a developer toolkit. The README is explicit about its goals: free, open source, private, extensible, and simple. It is built as a cross-platform app so users can press a shortcut, speak, and insert text into any field without sending audio to the cloud. That makes it relevant for teachers handling accommodations, quick dictation, lesson drafting, or accessible classroom computing. GitHub shows an MIT license, roughly 9.9k stars, TypeScript as the top language, and topic activity on Mar 29, 2026.
-
-- **GitHub:** [github.com/cjpais/Handy](https://github.com/cjpais/Handy)
-- **Stars:** 9.9k ⭐
-- **Language:** TypeScript
+- **GitHub:** [github.com/ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp)
+- **Stars:** 48.2k ⭐
+- **Language:** C++
 - **License:** MIT
-- **Last Commit:** Mar 29, 2026
-- **Category:** dictation, offline, accessibility
-- **Best for:** Cross-platform offline dictation for teachers and students
+- **Last Commit:** 2026-03-29
+- **Category:** speech-to-text, edge-ai, offline
+- **Best for:** Offline transcription on low-resource devices
 
 ---
 
-#### [Vosk API](https://github.com/alphacep/vosk-api)
-> **Description:** Vosk is a mature offline speech recognition stack that supports phones, Raspberry Pi devices, and servers. Its README and topic page emphasize local speech recognition across multiple programming environments, which is useful for building classroom tools, language labs, kiosk setups, or accessibility aides that cannot rely on constant internet access. It is less turnkey than Handy but more flexible for custom school deployments. GitHub topic metadata shows about 14.5k stars, Jupyter Notebook as the detected primary language, Apache-2.0 licensing, and activity on Feb 22, 2026.
+#### [Vosk](https://github.com/alphacep/vosk-api)
+> **Description:** Vosk is an offline speech recognition toolkit with bindings for Python, Java, Node, C#, Rust, Go, and more. Its README highlights subtitle generation, lecture transcription, streaming recognition, and support for many languages, all of which map directly to classroom accessibility and language learning use cases. Because it is designed to scale from Raspberry Pi and phones up to servers, it is attractive for schools that need flexibility across devices. GitHub metadata shows about 14.1k stars, Jupyter Notebook as the primary language, Apache-2.0 licensing, and a latest verified commit on February 22, 2026.
 
 - **GitHub:** [github.com/alphacep/vosk-api](https://github.com/alphacep/vosk-api)
-- **Stars:** 14.5k ⭐
+- **Stars:** 14.1k ⭐
 - **Language:** Jupyter Notebook
 - **License:** Apache-2.0
-- **Last Commit:** Feb 22, 2026
-- **Category:** offline-speech, multilingual, raspberry-pi
-- **Best for:** Building custom offline speech features for classroom tools
+- **Last Commit:** 2026-02-22
+- **Category:** speech-recognition, offline, multilingual
+- **Best for:** Offline captions and speech apps
 
 ---
-
-### OCR and Document Understanding
-
-#### [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
-> **Description:** PaddleOCR is one of the strongest document-processing repositories in this list because it is not limited to basic text extraction. The README and topic description position it as a toolkit that turns PDFs and images into structured data for AI workflows and supports more than 100 languages. For teachers, that means converting worksheets, textbook scans, handouts, and archived material into searchable or reusable content. GitHub topic metadata shows roughly 73.2k stars, Python as the main language, Apache-2.0 licensing, and a last commit on Mar 26, 2026.
-
-- **GitHub:** [github.com/PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
-- **Stars:** 73.2k ⭐
-- **Language:** Python
-- **License:** Apache-2.0
-- **Last Commit:** Mar 26, 2026
-- **Category:** ocr, pdf, multilingual
-- **Best for:** High-volume OCR and structured extraction from teaching materials
-
----
-
-#### [Tesseract](https://github.com/tesseract-ocr/tesseract)
-> **Description:** Tesseract remains the baseline open source OCR engine that many education workflows still depend on. The repo is focused on OCR itself rather than teacher UX, but it is valuable because it is stable, widely integrated, and works as the foundation for many document pipelines. Teachers and school technologists still use it to process scans, legacy PDFs, and digitized worksheets. GitHub topic data shows about 73.2k stars, C++ as the primary language, Apache-2.0 licensing, and a last commit on Mar 24, 2026.
-
-- **GitHub:** [github.com/tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
-- **Stars:** 73.2k ⭐
-- **Language:** C++
-- **License:** Apache-2.0
-- **Last Commit:** Mar 24, 2026
-- **Category:** ocr-engine, document-processing, scanning
-- **Best for:** Core OCR infrastructure for self-hosted document workflows
-
----
-
-#### [Umi-OCR](https://github.com/hiroi-sora/Umi-OCR)
-> **Description:** Umi-OCR is closer to a teacher-ready app than a backend library. The README highlights offline OCR, screenshot OCR, batch image import, PDF recognition, QR code support, formula recognition, and multilingual libraries. That combination makes it useful when teachers need a no-cloud desktop utility for converting screenshots, scanned worksheets, or PDF packets into editable text. GitHub shows an MIT license, around 41.4k stars, Python as the main language, and recent activity on Nov 20, 2025.
-
-- **GitHub:** [github.com/hiroi-sora/Umi-OCR](https://github.com/hiroi-sora/Umi-OCR)
-- **Stars:** 41.4k ⭐
-- **Language:** Python
-- **License:** MIT
-- **Last Commit:** Nov 20, 2025
-- **Category:** offline-ocr, desktop-tool, pdf
-- **Best for:** Teacher-friendly OCR of screenshots, scans, and PDFs
-
----
-
-#### [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)
-> **Description:** OCRmyPDF focuses on a practical classroom problem: scanned PDFs that cannot be searched, highlighted, or copied. The README is very clear that the tool adds an OCR text layer, preserves layout, supports multiple languages, and can repair or normalize common PDF issues in a scriptable workflow. For schools digitizing reading packs, archived assessments, or photocopied documents, that is extremely useful. GitHub shows about 32.1k stars, Python as the primary language, MPL-2.0 licensing, and activity through Dec 15, 2025.
-
-- **GitHub:** [github.com/ocrmypdf/OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)
-- **Stars:** 32.1k ⭐
-- **Language:** Python
-- **License:** MPL-2.0
-- **Last Commit:** Dec 15, 2025
-- **Category:** pdf, searchable-pdf, ocr
-- **Best for:** Making scanned classroom PDFs searchable and copyable
-
----
-
-#### [EasyOCR](https://github.com/JaidedAI/EasyOCR)
-> **Description:** EasyOCR is a popular deep-learning OCR library that trades some end-user polish for broad language support and flexible integration. The README and topic page emphasize ready-to-use OCR across more than 80 languages and major writing systems, making it a good choice when teachers or edtech teams need to extract text from multilingual classroom content, posters, slides, or visual resources. GitHub topic metadata shows roughly 29.2k stars, Python as the primary language, Apache-2.0 licensing, and activity on Dec 5, 2025.
-
-- **GitHub:** [github.com/JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR)
-- **Stars:** 29.2k ⭐
-- **Language:** Python
-- **License:** Apache-2.0
-- **Last Commit:** Dec 5, 2025
-- **Category:** multilingual-ocr, deep-learning, image-text
-- **Best for:** OCR across multilingual classroom visuals and resources
-
----
-
-### Voice, TTS, and Multilingual Support
 
 #### [TTS](https://github.com/coqui-ai/TTS)
-> **Description:** Coqui TTS is one of the largest open source text-to-speech projects available on GitHub. The README describes it as a deep-learning toolkit for production-grade speech synthesis, voice conversion, and multi-speaker TTS. For teachers, it is especially relevant in accessibility and language-learning workflows: reading passages aloud, producing audio versions of content, or prototyping voice-enabled learning tools. GitHub shows about 44.2k stars, Python as the primary language, MPL-2.0 licensing, and the last visible update on Aug 16, 2024.
+> **Description:** Coqui TTS is a deep learning toolkit for text-to-speech, voice cloning, and related speech synthesis research and production use. For teachers, that opens practical use cases like creating narrated lessons, accessibility audio, pronunciation practice, or low-cost voice assets for digital courses. The README lists ready-to-use models, dataset tools, trainer APIs, and multi-speaker support, which makes it more than a single demo model. GitHub still shows strong adoption with about 43.9k stars, Python as the primary language, MPL-2.0 licensing, and a latest verified commit on February 10, 2024.
 
 - **GitHub:** [github.com/coqui-ai/TTS](https://github.com/coqui-ai/TTS)
-- **Stars:** 44.2k ⭐
+- **Stars:** 43.9k ⭐
 - **Language:** Python
 - **License:** MPL-2.0
-- **Last Commit:** Aug 16, 2024
-- **Category:** text-to-speech, accessibility, language-learning
-- **Best for:** Generating classroom audio and accessibility voice output
-
----
-
-#### [OpenVoice](https://github.com/myshell-ai/OpenVoice)
-> **Description:** OpenVoice focuses on instant voice cloning and multilingual speech generation. The README highlights accurate tone cloning, fine-grained style control, cross-lingual voice cloning, and MIT-licensed commercial use. In a teaching context, that makes it more specialized than standard TTS: useful for localized audio content, teacher-voiced materials, and experimental language-learning assets where consistent voice identity matters. GitHub shows about 35.8k stars, Python as the primary language, MIT licensing, and a last commit on Apr 19, 2025.
-
-- **GitHub:** [github.com/myshell-ai/OpenVoice](https://github.com/myshell-ai/OpenVoice)
-- **Stars:** 35.8k ⭐
-- **Language:** Python
-- **License:** MIT
-- **Last Commit:** Apr 19, 2025
-- **Category:** voice-cloning, multilingual, tts
-- **Best for:** Creating multilingual or teacher-voiced audio materials
-
----
-
-#### [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
-> **Description:** LibreTranslate is not a tutoring app, but it solves a common classroom AI need: self-hosted machine translation without routing text through proprietary providers. The README is explicit that it is free, open source, self-hosted, and powered by open translation models instead of Google or Azure. That matters for multilingual classrooms, translated handouts, and accessibility support. GitHub shows about 13.5k stars, Python as the main language, AGPL-3.0 licensing, and visible activity through Dec 23, 2025.
-
-- **GitHub:** [github.com/LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
-- **Stars:** 13.5k ⭐
-- **Language:** Python
-- **License:** AGPL-3.0
-- **Last Commit:** Dec 23, 2025
-- **Category:** translation, multilingual, self-hosted
-- **Best for:** Self-hosted translation for multilingual teaching workflows
+- **Last Commit:** 2024-02-10
+- **Category:** text-to-speech, voice, accessibility
+- **Best for:** Generating spoken lesson content
 
 ---
 
 #### [Piper](https://github.com/rhasspy/piper)
-> **Description:** Piper is a fast local neural text-to-speech system designed for on-device use. That makes it a practical choice for schools that need offline TTS without recurring API costs. While the repository has been archived, it remains useful because the code is still public, MIT-licensed, and widely referenced in local voice stacks. For teachers, Piper is best viewed as infrastructure for local reading support, kiosk devices, assistive tools, or classroom assistants. GitHub shows about 10.3k stars, C++ as the primary language, and the archive notice dated Oct 6, 2025.
+> **Description:** Piper is a fast local neural text-to-speech system focused on lightweight, practical voice generation. Compared with larger research toolkits, Piper is attractive in education because it is simple, efficient, and friendly to offline deployment for announcements, narrated readings, assistive tools, and voice feedback systems. The repository was archived in October 2025, so it is stable rather than fast-moving, but still valuable where schools need a small local TTS engine with minimal operational complexity. GitHub shows about 10.3k stars, C++ as the primary language, MIT licensing, and a latest verified commit on August 26, 2025.
 
 - **GitHub:** [github.com/rhasspy/piper](https://github.com/rhasspy/piper)
 - **Stars:** 10.3k ⭐
 - **Language:** C++
 - **License:** MIT
-- **Last Commit:** Oct 6, 2025
-- **Category:** local-tts, offline, assistive-tech
-- **Best for:** Offline text-to-speech on local devices and kiosks
+- **Last Commit:** 2025-08-26
+- **Category:** text-to-speech, local-ai, accessibility
+- **Best for:** Lightweight local narration and voice output
 
 ---
 
-#### [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)
-> **Description:** sherpa-onnx is a broader speech stack that includes speech-to-text, text-to-speech, diarization, and voice activity detection across many platforms. It is more engineering-heavy than teacher-facing, but it is valuable when schools or developers want one open source package to power voice features in classroom apps, Raspberry Pi devices, or local assistant hardware. GitHub shows Apache-2.0 licensing, about 9k stars, C++ as the detected main language, and visible activity through Dec 17, 2025.
+#### [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
+> **Description:** LibreTranslate is a self-hosted machine translation API and web app built for offline-capable translation without depending on closed SaaS platforms. Teachers can use it to translate announcements, bilingual materials, family communication drafts, or classroom interfaces in institutions that need more control over data. Its README keeps the value proposition simple: free, open source, easy to set up, and deployable on your own infrastructure. GitHub metadata shows about 13.5k stars, Python as the primary language, AGPL-3.0 licensing, and a latest verified commit on March 20, 2026.
 
-- **GitHub:** [github.com/k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)
-- **Stars:** 9k ⭐
+- **GitHub:** [github.com/LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
+- **Stars:** 13.5k ⭐
+- **Language:** Python
+- **License:** AGPL-3.0
+- **Last Commit:** 2026-03-20
+- **Category:** translation, multilingual, self-hosted
+- **Best for:** Private translation workflows for schools
+
+---
+
+### OCR, Document Conversion, and Learning Materials
+
+#### [Tesseract](https://github.com/tesseract-ocr/tesseract)
+> **Description:** Tesseract is the canonical open source OCR engine and still a foundational choice for turning scans into searchable text. Teachers, librarians, and archivists can use it for digitizing worksheets, old handouts, exam papers, research packets, and scanned reading materials. The README stresses UTF-8 support, 100+ languages, multiple output formats, and the ability to work with both modern LSTM and legacy OCR engines. It is not flashy, but it remains one of the most dependable building blocks in document pipelines. GitHub shows about 71.9k stars, C++ as the primary language, Apache-2.0 licensing, and a latest verified commit on March 23, 2026.
+
+- **GitHub:** [github.com/tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
+- **Stars:** 71.9k ⭐
 - **Language:** C++
 - **License:** Apache-2.0
-- **Last Commit:** Dec 17, 2025
-- **Category:** speech-stack, on-device, multilingual
-- **Best for:** Building local voice features into school software or devices
+- **Last Commit:** 2026-03-23
+- **Category:** ocr, digitization, archival
+- **Best for:** OCR on scans and legacy school documents
 
 ---
 
-### Self-Hosted Course Assistants and RAG Workspaces
+#### [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+> **Description:** PaddleOCR is a high-adoption OCR and document parsing toolkit that converts PDFs and images into structured AI-friendly outputs such as JSON and Markdown. That is particularly useful for teachers who need to turn worksheets, course packets, multilingual handouts, or scanned references into material that can be searched, summarized, or fed into RAG systems. The README emphasizes support for 100+ languages and newer document-parsing features aimed at AI workflows, not just raw text extraction. GitHub shows about 66.5k stars, Python as the primary language, Apache-2.0 licensing, and a latest verified commit on March 31, 2026.
 
-#### [Dify](https://github.com/langgenius/dify)
-> **Description:** Dify is one of the most mature open source platforms for building AI workflows and assistants around your own data. The project is not education-specific, but that is part of its value: teachers can use it to create course bots, reading assistants, FAQ helpers, and lesson-prep workflows without relying on a managed SaaS builder. The topic page positions it as production-ready agentic workflow software. GitHub topic metadata shows about 135k stars, TypeScript as the primary language, Apache-2.0 licensing, and activity on Mar 29, 2026.
+- **GitHub:** [github.com/PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+- **Stars:** 66.5k ⭐
+- **Language:** Python
+- **License:** Apache-2.0
+- **Last Commit:** 2026-03-31
+- **Category:** ocr, document-parsing, multilingual
+- **Best for:** Structured extraction from PDFs and images
 
-- **GitHub:** [github.com/langgenius/dify](https://github.com/langgenius/dify)
-- **Stars:** 135k ⭐
+---
+
+#### [Docling](https://github.com/docling-project/docling)
+> **Description:** Docling is built around preparing documents for generative AI, with support for parsing PDFs and many office formats into structured outputs. In education, that makes it useful for turning course packs, reports, slide decks, and mixed-format archives into cleaner downstream inputs for tutoring systems, search tools, or study assistants. Its README highlights PDF understanding, integrations with the gen-AI ecosystem, and chunking-oriented workflows that are immediately relevant for RAG over school content. GitHub shows about 52.4k stars, Python as the primary language, MIT licensing, and a latest verified commit on March 30, 2026.
+
+- **GitHub:** [github.com/docling-project/docling](https://github.com/docling-project/docling)
+- **Stars:** 52.4k ⭐
+- **Language:** Python
+- **License:** MIT
+- **Last Commit:** 2026-03-30
+- **Category:** document-conversion, parsing, rag-prep
+- **Best for:** Preparing course documents for AI retrieval
+
+---
+
+#### [Marker](https://github.com/datalab-to/marker)
+> **Description:** Marker converts PDFs to Markdown and JSON with a heavy focus on accuracy, layout awareness, and compatibility with downstream AI processing. For teachers, that matters when converting readings, lecture slides, scanned packets, or scholarly PDFs into study guides and searchable notes without losing document structure. The README also documents optional LLM-assisted cleanup and benchmark comparisons, so it is clearly aimed at practical document intelligence rather than just bare OCR. GitHub shows about 33.2k stars, Python as the primary language, GPL-3.0 licensing, and a latest verified commit on March 10, 2026.
+
+- **GitHub:** [github.com/datalab-to/marker](https://github.com/datalab-to/marker)
+- **Stars:** 33.2k ⭐
+- **Language:** Python
+- **License:** GPL-3.0
+- **Last Commit:** 2026-03-10
+- **Category:** pdf-to-markdown, document-ai, extraction
+- **Best for:** Converting readings and handouts into clean Markdown
+
+---
+
+#### [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)
+> **Description:** OCRmyPDF adds an OCR text layer to scanned PDFs so they become searchable, copyable, and more accessible while preserving the original file. That is a strong fit for school offices, faculty archives, and teachers handling scan-heavy workflows where the goal is not fancy document AI but dependable searchable PDFs. Its README focuses on the command-line tool and production-grade PDF handling, which makes it useful in batch cleanup tasks. GitHub shows about 32k stars, Python as the primary language, MPL-2.0 licensing, and a latest verified commit on March 16, 2026.
+
+- **GitHub:** [github.com/ocrmypdf/OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)
+- **Stars:** 32k ⭐
+- **Language:** Python
+- **License:** MPL-2.0
+- **Last Commit:** 2026-03-16
+- **Category:** pdf, ocr, searchability
+- **Best for:** Making scanned PDFs searchable at scale
+
+---
+
+### Visual Content and Classroom Media
+
+#### [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+> **Description:** AUTOMATIC1111's Stable Diffusion WebUI remains the most recognizable open-source browser interface for text-to-image generation, inpainting, outpainting, upscaling, and prompt experimentation. For teachers, it can support classroom visuals, concept art, historical scene mockups, poster assets, and media prompts for lesson design, assuming local policy allows image generation. The README focuses on a wide range of practical image workflows and extensive configuration flexibility through a Gradio-based interface. GitHub still shows massive adoption with about 162k stars, Python as the primary language, AGPL-3.0 licensing, and a latest verified commit on July 27, 2024.
+
+- **GitHub:** [github.com/AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+- **Stars:** 162k ⭐
+- **Language:** Python
+- **License:** AGPL-3.0
+- **Last Commit:** 2024-07-27
+- **Category:** image-generation, media, stable-diffusion
+- **Best for:** Fast classroom image generation experiments
+
+---
+
+#### [ComfyUI](https://github.com/Comfy-Org/ComfyUI)
+> **Description:** ComfyUI is a graph-based visual engine for building complex Stable Diffusion and multimodal image workflows. For educators, its advantage is control: teachers can build repeatable image pipelines for subject visuals, animation sequences, diagram variants, or student demo workflows rather than relying on one-click prompts alone. The README emphasizes a nodes-and-flowchart interface, support across operating systems and GPU types, and a fast-moving release cycle. GitHub shows about 103k stars, Python as the primary language, GPL-3.0 licensing, and a latest verified commit on April 1, 2026.
+
+- **GitHub:** [github.com/Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
+- **Stars:** 103k ⭐
+- **Language:** Python
+- **License:** GPL-3.0
+- **Last Commit:** 2026-04-01
+- **Category:** image-generation, workflows, nodes
+- **Best for:** Advanced repeatable image workflows for teaching media
+
+---
+
+#### [InvokeAI](https://github.com/invoke-ai/InvokeAI)
+> **Description:** InvokeAI is a creative engine for Stable Diffusion models with a polished web UI and professional workflow focus. Teachers who need more structured image generation than a basic prompt box may prefer it for iterative asset creation, art demonstrations, and lesson illustration pipelines. The README stresses generating, refining, iterating, and building workflows, which makes it suitable for classroom media teams and design instruction as well as individual teachers. GitHub shows about 26.5k stars, TypeScript as the primary language, Apache-2.0 licensing, and a latest verified commit on March 28, 2026.
+
+- **GitHub:** [github.com/invoke-ai/InvokeAI](https://github.com/invoke-ai/InvokeAI)
+- **Stars:** 26.5k ⭐
 - **Language:** TypeScript
 - **License:** Apache-2.0
-- **Last Commit:** Mar 29, 2026
-- **Category:** rag, workflow, self-hosted
-- **Best for:** Building school-owned AI assistants and workflows
-
----
-
-#### [LangChain](https://github.com/langchain-ai/langchain)
-> **Description:** LangChain is the most widely adopted open source framework in this list for chaining LLM calls, retrieval, tools, and agent logic. It is not a teacher product by itself, but many education prototypes and internal school tools are built on it. For teachers and technical teams, LangChain matters because it can power curriculum chatbots, rubric assistants, reading guides, and document-grounded helpers around local or hosted models. GitHub topic metadata shows roughly 132k stars, Python as the primary language, MIT licensing, and activity on Mar 29, 2026.
-
-- **GitHub:** [github.com/langchain-ai/langchain](https://github.com/langchain-ai/langchain)
-- **Stars:** 132k ⭐
-- **Language:** Python
-- **License:** MIT
-- **Last Commit:** Mar 29, 2026
-- **Category:** framework, rag, agents
-- **Best for:** Developing custom teacher or district AI workflows
-
----
-
-#### [Open WebUI](https://github.com/open-webui/open-webui)
-> **Description:** Open WebUI is a teacher-friendly interface layer for local and remote models, especially when paired with Ollama or OpenAI-compatible backends. Its README and topic description emphasize a user-friendly AI interface with self-hosted deployment, knowledge-base support, and broad model compatibility. For a school setting, that makes it a practical front end for a document-grounded class assistant without writing a full custom app. GitHub topic metadata shows about 129k stars, Python as the primary language, BSD-3-Clause licensing, and activity on Mar 29, 2026.
-
-- **GitHub:** [github.com/open-webui/open-webui](https://github.com/open-webui/open-webui)
-- **Stars:** 129k ⭐
-- **Language:** Python
-- **License:** BSD-3-Clause
-- **Last Commit:** Mar 29, 2026
-- **Category:** webui, self-hosted, knowledge-base
-- **Best for:** Deploying a simple AI portal for teachers and students
-
----
-
-#### [RAGFlow](https://github.com/infiniflow/ragflow)
-> **Description:** RAGFlow is a retrieval-first platform built for document understanding and knowledge-grounded AI. The README and topic page frame it as a strong context layer for LLMs, combining RAG with agent capabilities. That maps well to school use cases where assistants must stay anchored to syllabi, handbooks, grading policies, or course packets instead of hallucinating from general web knowledge. GitHub topic metadata shows about 76.5k stars, Python as the primary language, Apache-2.0 licensing, and activity on Mar 29, 2026.
-
-- **GitHub:** [github.com/infiniflow/ragflow](https://github.com/infiniflow/ragflow)
-- **Stars:** 76.5k ⭐
-- **Language:** Python
-- **License:** Apache-2.0
-- **Last Commit:** Mar 29, 2026
-- **Category:** rag, document-understanding, self-hosted
-- **Best for:** Document-grounded school knowledge bases and assistants
-
----
-
-#### [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)
-> **Description:** AnythingLLM is one of the most approachable self-hosted AI workspaces in this list. The project describes itself as an all-in-one AI productivity application with built-in RAG, agents, local-first operation, and no-code setup. For teachers, that means a relatively low-friction path to uploading policies, lesson notes, or reading packets and turning them into a searchable assistant. GitHub topic metadata shows about 57.1k stars, JavaScript as the primary language, MIT licensing, and activity on Mar 27, 2026.
-
-- **GitHub:** [github.com/Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm)
-- **Stars:** 57.1k ⭐
-- **Language:** JavaScript
-- **License:** MIT
-- **Last Commit:** Mar 27, 2026
-- **Category:** local-first, rag, no-code
-- **Best for:** Quickly launching a private course assistant without much setup
+- **Last Commit:** 2026-03-28
+- **Category:** image-generation, creative-tools, workflows
+- **Best for:** Polished image creation pipelines for lesson assets
 
 ---
 
 ## FAQ
 
 ### What are the best open source AI tools for teachers in 2026?
-For most teachers, the strongest starting points are `DeepTutor` for tutoring, `whisper.cpp` or `faster-whisper` for transcription, `PaddleOCR` or `OCRmyPDF` for digitizing materials, and `Dify` or `Open WebUI` for self-hosted course assistants.
+For the broadest coverage, start with Open WebUI, Dify, AnythingLLM, Whisper, PaddleOCR, Docling, and Ollama. Together they cover classroom chat, local models, transcription, OCR, retrieval, and document conversion.
 
-### Are there any truly free AI tools for teachers on GitHub?
-Yes. Every project in this repository is a public GitHub repository with an open source license. Some projects may optionally connect to paid model APIs, but the repositories themselves are not proprietary SaaS products.
+### Are there any truly free AI tools for teachers with GitHub repositories?
+Yes. Every tool in this list is backed by a public GitHub repository and open-source code. Some projects offer optional hosted or enterprise products, but the repositories listed here are the open-source codebases.
 
-### Which open source AI tools help teachers create accessible classroom materials?
-`whisper.cpp`, `faster-whisper`, `Handy`, `TTS`, `Piper`, and `LibreTranslate` are the strongest picks for captions, dictation, text-to-speech, and multilingual support.
+### Which AI tools for teachers are best for privacy-sensitive school use?
+Open WebUI, Ollama, AnythingLLM, Whisper, Vosk, Piper, LibreTranslate, and Tesseract are the strongest options when you want local or self-hosted workflows and tighter control over student or institutional data.
 
-### What is the best self-hosted AI assistant for school documents?
-`Dify`, `RAGFlow`, `AnythingLLM`, and `Open WebUI` are the most practical choices if you want to upload syllabi, readings, policies, or handouts and build a private assistant around them.
+### What is the best open source AI tool for turning class PDFs into searchable study material?
+For classic OCR, use Tesseract or OCRmyPDF. For AI-ready structured extraction, start with PaddleOCR, Docling, or Marker, depending on whether you need searchable PDFs, Markdown output, or richer parsing for RAG.
 
-### Which GitHub OCR tools are best for worksheets, scans, and PDFs?
-`PaddleOCR` is the broadest OCR toolkit, `OCRmyPDF` is best for making scanned PDFs searchable, `Umi-OCR` is the easiest desktop-friendly option, and `EasyOCR` is a strong multilingual library.
+### Which GitHub AI repositories are best for creating a teacher chatbot from school documents?
+The most practical stack is Ollama plus Open WebUI or AnythingLLM for simple setups, and Dify, Flowise, Langflow, RAGFlow, or Haystack for more advanced retrieval, workflows, and deployment control.
 
-### Why are there not more open source AI grading and quiz-generator tools in this list?
-Because the GitHub ecosystem is still thin there. I found fewer than 5 repos that were both actively maintained and strong enough to recommend without reservations, so I documented the gap instead of filling the list with low-quality or abandoned projects.
-
-### Can schools use these repositories without sending student data to the cloud?
-Often yes, but it depends on deployment choices. Local-first tools like `Study Buddy`, `Handy`, `whisper.cpp`, `Piper`, and `LibreTranslate` are especially useful when privacy and offline operation matter.
+### Are there enough teacher-specific open source AI repos to make a separate grading category?
+Not yet. Verified teacher-only grading, rubric, and quiz-generation repositories with strong maintenance were still under five solid candidates during research, so this list documents that as a gap instead of lowering quality standards.
 
 ## GitHub Search Queries Used
 
-The initial narrow teacher-only searches were too sparse, so the research expanded into adjacent teacher workflows. These are the GitHub-oriented queries used:
-
 ```bash
-gh search repos "ai tutor education" --match name,description,readme --sort updated --order desc
-gh search repos "ai-tutor" --match name,description,topics --sort stars --order desc
-gh search repos "ai-education" --match name,description,topics --sort stars --order desc
-gh search repos "speech-to-text offline" --match name,description,topics --sort stars --order desc
-gh search repos "ocr pdf ai" --match name,description,topics --sort stars --order desc
-gh search repos "text-to-speech open source" --match name,description,topics --sort stars --order desc
-gh search repos "self-hosted rag" --match name,description,topics --sort stars --order desc
-gh search repos "translation self-hosted" --match name,description,topics --sort stars --order desc
-gh search repos "teacher ai github" --match name,description,readme --sort updated --order desc
-gh search repos "classroom ai open source" --match name,description,readme --sort updated --order desc
+gh search repos "teacher ai self hosted rag" --match name,description,readme --limit 20
+gh search repos "open source ai chat ui local llm education" --match name,description,readme --limit 20
+gh search repos "open source workflow llm rag agents" --match name,description,readme --limit 20
+gh search repos "open source transcription whisper speech to text" --match name,description,readme --limit 20
+gh search repos "open source text to speech offline" --match name,description,readme --limit 20
+gh search repos "open source translation self hosted github" --match name,description,readme --limit 20
+gh search repos "open source OCR PDF markdown document parsing" --match name,description,readme --limit 20
+gh search repos "open source stable diffusion web ui" --match name,description,readme --limit 20
+gh search repos "open source jupyter ai extension" --match name,description,readme --limit 20
+gh search repos "open source local llm runner ollama" --match name,description,readme --limit 20
 ```
 
 ## Contributing
+Contributions are welcome. Please open a pull request or issue with:
 
-Contributions are welcome, but submissions must stay within the rules of this repository:
+1. The exact `github.com/owner/repo` URL.
+2. A short note explaining why the repo is useful for teachers.
+3. Verified GitHub metadata: stars, primary language, license, and last commit date.
+4. A note on whether the tool is self-hosted, local-first, or requires external services.
 
-- Only submit tools that exist as public GitHub repositories.
-- Every submission must include a `github.com` repository URL.
-- No proprietary SaaS products, closed-source wrappers, or cloud-only services.
-- Include the repo license, primary language, star count, and last commit date from GitHub.
-- If a tool is teacher-adjacent rather than teacher-specific, explain the classroom use case clearly.
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide.
+Submissions without a public GitHub repository URL will be rejected.
 
 ## License
-
-MIT License - see [LICENSE](./LICENSE)
+This repository is licensed under the MIT License. See [LICENSE](./LICENSE).

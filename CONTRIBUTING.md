@@ -1,55 +1,60 @@
 # Contributing
 
-Thanks for helping improve `awesome-best-ai-tools-for-teachers-2026`.
+Thanks for contributing to `awesome-best-ai-tools-for-teachers-2026`.
 
 ## Submission Rules
 
-- Only submit tools that exist as public GitHub repositories.
-- Every submission must include a `github.com/owner/repo` URL.
-- No proprietary SaaS products, closed-source wrappers, or cloud-only tools.
-- The repository must have a visible open source license.
-- Include current GitHub metadata:
-  - stars
-  - primary language
-  - license
-  - last commit date
-- Explain why the repo is useful for teachers, schools, or instructional designers.
-- If the repo is not teacher-specific, state the classroom workflow it supports.
+To keep this list consistent, every submission must meet all of the following:
 
-## Preferred Entry Format
+1. The tool must have a public `github.com` repository URL.
+2. The tool must be open source.
+3. The repository must be relevant to teachers, schools, instruction, accessibility, classroom content, or adjacent education workflows.
+4. The submission must include verified GitHub metadata:
+   - Stars
+   - Primary language
+   - License
+   - Last commit date
+5. No proprietary SaaS-only products.
+6. No link shorteners, product landing pages, or app-store-only links in place of the GitHub repo.
 
-Use this structure in pull requests:
+## Preferred Submission Format
+
+Please include:
+
+- Repository name
+- GitHub URL
+- One paragraph on why it is useful for teachers
+- Suggested category
+- Verified GitHub stats
+
+Example:
 
 ```md
-#### [Tool Name](https://github.com/owner/repo)
-> **Description:** Short summary based on the GitHub README. Include what it does, key features, license, star count, primary language, and last commit date.
+#### [Project Name](https://github.com/owner/repo)
+> **Description:** Short summary of what it does and why it matters for teachers. Include stars, language, license, and last commit date from GitHub.
 
 - **GitHub:** [github.com/owner/repo](https://github.com/owner/repo)
-- **Stars:** 123 ⭐
+- **Stars:** 1234 ⭐
 - **Language:** Python
 - **License:** MIT
-- **Last Commit:** 2026-03-01
-- **Category:** tag1, tag2
-- **Best for:** specific teacher use case
+- **Last Commit:** 2026-01-15
+- **Category:** rag, accessibility
+- **Best for:** Lecture transcription
 ```
 
 ## Quality Bar
 
 - Prefer actively maintained repositories.
-- Prefer tools that are useful in tutoring, accessibility, OCR, translation, content prep, or self-hosted classroom AI.
-- Do not submit duplicates, abandoned repos, or repos without a clear README.
+- Prefer repositories with clear README documentation.
+- If a category has fewer than 5 strong repos, document the gap honestly instead of adding weak entries.
+- Do not submit duplicate repos or forks unless the fork is the actively maintained canonical project.
 
 ## Pull Requests
 
 - Keep pull requests focused.
-- Add or update one section at a time when possible.
-- If metadata changed, cite the current GitHub repo page in the PR description.
+- If you update metrics, mention the verification date in the PR description.
+- If a repo changed ownership or license, note that clearly.
 
-## Issues
+## Code of Conduct
 
-Open an issue if:
-
-- a repo becomes unavailable
-- license metadata changes
-- a tool is no longer open source
-- a better GitHub-native replacement should be considered
+Be direct, factual, and respectful.
